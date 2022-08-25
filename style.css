@@ -334,6 +334,10 @@ html{
     font-weight: 800;
 }
 
+.btn-div{
+    text-align: right;
+    width: 75%;
+}
 
 
 /* media queries  */
@@ -393,6 +397,9 @@ html{
     .video-embed{
         width: 500px;
         height: 271px;
+    }
+    .btn-div{
+        width: 90%;
     }
 }
 @media (max-width: 767px){
@@ -486,6 +493,7 @@ html{
         margin: 20px auto;
     }
     .btn-div{
+        width: 100%;
         text-align: center;
     }
 }
