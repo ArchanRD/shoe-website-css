@@ -317,7 +317,7 @@ html{
 
 .container-4{
     background-color: #00a9e9;
-    padding: 40px 80px;
+    padding: 40px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -392,7 +392,7 @@ html{
     }
     .video-embed{
         width: 500px;
-        height: 300px;
+        height: 271px;
     }
 }
 @media (max-width: 767px){
@@ -438,5 +438,54 @@ html{
     }
     .nav-center ul li{
         margin: 10px;
+    }
+}
+
+@media(max-width: 576px){
+    .container-4{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container-4 .video-header h1{
+        text-align: center;
+    }
+    .logo-img{
+        width: 20%;
+    }
+    .container-1{
+        flex-wrap: wrap-reverse;
+    }
+    .row-1{
+        padding: 0;
+        text-align: center;
+    }
+    .row-1 h1{
+        font-size: 40px;
+    }
+    .row-1 p{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .underline{
+        border: none;
+    }
+    .container-3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container-3 .c3-row-1, .c3-row-2 {
+        width: 100%;
+    }
+    .container-3 .c3-row-2 h1{
+        text-align: center;
+        word-wrap: break-word;
+    }
+    .container-3 .c3-row-2 p{
+        text-align: center;
+        margin: 20px auto;
+    }
+    .btn-div{
+        text-align: center;
     }
 }
