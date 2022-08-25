@@ -21,6 +21,28 @@ html{
     top: 23px;
     right: 0;
 }
+#close{
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 23px;
+    right: 0;
+    margin: 0 20px;
+}
+@keyframes fade-out{
+    100%{
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+        display: none;
+    }
+}
+.faded-animation{
+    animation-name: fade-out;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
 .nav{
     display: flex;
     align-items: center;
