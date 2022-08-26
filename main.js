@@ -8,8 +8,10 @@ nav_items.style.maxHeight = "0px";
 function toggle_menu(){
     if(nav_items.style.maxHeight == "0px"){
         nav_items.style.maxHeight = "300px";
+        nav_items.classList.add('show-nav');
     }else{
         nav_items.style.maxHeight = "0px";
+        nav_items.classList.remove('show-nav');
     }
 }
 

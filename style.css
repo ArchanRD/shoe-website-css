@@ -447,8 +447,12 @@ html{
         background-color: black;
         /* display: none; */
         position: relative;
-        top: -9px;
+        top: -300px;
+        z-index: -1;
         transition: all ease 0.5s;
+    }
+    .nav-center .nav-items.show-nav{
+        top: -9px;
     }
     #menu{
         display: block;
