@@ -15,6 +15,8 @@ function toggle_menu(){
         closeBtn.classList.add('faded-animation');
         closeBtn.style.display = "block";
     }
+
+    
 }
 
 closeBtn.addEventListener('click', ()=>{

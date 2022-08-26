@@ -460,7 +460,7 @@ html{
         display: none;
     }
     .nav-center ul li{
-        margin: 10px;
+        /* margin: 5px; */
         font-size: 17px;
         text-transform: capitalize;
     }
