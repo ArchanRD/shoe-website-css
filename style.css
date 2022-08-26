@@ -436,9 +436,8 @@ html{
     }
     .nav{
         display: block;
+        height: 75px;
     }
-
-    
 
     .nav-center .nav-items{
         color: white;
@@ -515,5 +514,10 @@ html{
     .btn-div{
         width: 100%;
         text-align: center;
+    }
+
+    #menu{
+        position: absolute;
+        top: 15px;
     }
 }
