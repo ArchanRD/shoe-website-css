@@ -444,10 +444,13 @@ html{
         align-items: start;
         background-color: black;
         /* display: none; */
-        position: relative;
-        left: -770px;
-        top: -9px;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: -140px;
         transition: all ease 0.5s;
+        z-index: -1;
+        /* transform: scale(0); */
     }
     #menu{
         display: block;
@@ -462,11 +465,12 @@ html{
         text-transform: capitalize;
     }
     .nav-center .nav-items.show-nav{
-        /* display: block; */
+        display: block;
         background-color: black;
         color: white;
         left: 0px;
-        top: -9px;
+        top: 90px;
+        /* transform: scale(1); */
     }
 }
 
