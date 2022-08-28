@@ -2,27 +2,35 @@ let menu = document.getElementById('menu');
 let nav_items = document.querySelector('.nav-items');
 let nav_item_child = document.querySelectorAll('.nav-item-child');
 let closeBtn = document.getElementById('close');
-
+let buttonTop = document.querySelectorAll('.card-shop-btn');
+// console.log(buttonTop.length)
 nav_items.style.maxHeight = "0px";
 
-function toggle_menu(){
-    if(nav_items.style.maxHeight == "0px"){
-        nav_items.style.maxHeight = "300px";
-        nav_items.classList.add('show-nav');
-    }else{
-        nav_items.style.maxHeight = "0px";
-        nav_items.classList.remove('show-nav');
-    }
-}
+//onclick change inner html of button
 
-for(i=0; i<nav_item_child.length; i++){
-    nav_item_child[i].addEventListener('click', ()=>{
-        nav_items.style.maxHeight = "0px";
+for (let i = 0; i < buttonTop.length; i++) {
+    buttonTop[i].addEventListener("click", function (){
+        buttonTop[i].innerHTML = "Added"
+        setTimeout(function(){
+            buttonTop[i].innerHTML = "BUY NOW"
+        }, 10000)
     })
 }
 
-closeBtn.addEventListener('click', ()=>{
-    nav_items.classList.remove('show-nav');
-    menu.style.display = "block";
-    closeBtn.style.display = "none";
-})
+// toggle menu () 
+function toggleMenu(){
+    if(nav_items.style.maxHeight == "0px"){
+        nav_items.style.maxHeight = "300px";
+
+        for (let i = 0; i < nav_item_child.length; i++) {
+           nav_item_child[i].classList.add('show-items')
+        }
+    }else{
+        nav_items.style.maxHeight = "0px";
+        setTimeout(() => {
+            for (let i = 0; i < nav_item_child.length; i++) {
+                nav_item_child[i].classList.remove('show-items')
+             }
+        }, 500);
+    }
+}

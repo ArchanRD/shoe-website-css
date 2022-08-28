@@ -445,13 +445,15 @@ html{
         align-items: start;
         background-color: black;
         /* display: none; */
-        position: relative;
-        top: -300px;
-        z-index: -1;
+        width: 100%;
+        z-index: 1000;
         transition: all ease 0.5s;
     }
-    .nav-center .nav-items.show-nav{
-        top: -9px;
+    .nav-center .nav-item-child{
+        display: none;
+    }
+    .nav-center .nav-item-child.show-items{
+        display: block;
     }
     #menu{
         display: block;
@@ -515,7 +517,6 @@ html{
         width: 100%;
         text-align: center;
     }
-
     #menu{
         position: absolute;
         top: 15px;
