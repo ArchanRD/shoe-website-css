@@ -444,16 +444,11 @@ html{
         flex-direction: column;
         align-items: start;
         background-color: black;
-        /* display: none; */
-        width: 100%;
-        z-index: 1000;
-        transition: all ease 0.5s;
-    }
-    .nav-center .nav-item-child{
         display: none;
-    }
-    .nav-center .nav-item-child.show-items{
-        display: block;
+        width: 100%;
+        position: relative;
+        top: -15px;
+        transition: all ease 0.5s;
     }
     #menu{
         display: block;
@@ -466,6 +461,9 @@ html{
         margin: 8px;
         font-size: 17px;
         text-transform: capitalize;
+    }
+    .row-2{
+        z-index: -1;
     }
 }
 

@@ -4,7 +4,7 @@ let nav_item_child = document.querySelectorAll('.nav-item-child');
 let closeBtn = document.getElementById('close');
 let buttonTop = document.querySelectorAll('.card-shop-btn');
 // console.log(buttonTop.length)
-nav_items.style.maxHeight = "0px";
+nav_items.style.display = "none"
 
 //onclick change inner html of button
 
@@ -19,18 +19,9 @@ for (let i = 0; i < buttonTop.length; i++) {
 
 // toggle menu () 
 function toggleMenu(){
-    if(nav_items.style.maxHeight == "0px"){
-        nav_items.style.maxHeight = "300px";
-
-        for (let i = 0; i < nav_item_child.length; i++) {
-           nav_item_child[i].classList.add('show-items')
-        }
+    if(nav_items.style.display == "none"){
+        nav_items.style.display = "block"
     }else{
-        nav_items.style.maxHeight = "0px";
-        setTimeout(() => {
-            for (let i = 0; i < nav_item_child.length; i++) {
-                nav_item_child[i].classList.remove('show-items')
-             }
-        }, 500);
+     nav_items.style.display = "none"
     }
 }
