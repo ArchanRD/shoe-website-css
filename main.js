@@ -25,3 +25,9 @@ function toggleMenu(){
      nav_items.style.display = "none"
     }
 }
+
+for(i=0; i<nav_item_child.length; i++){
+    nav_item_child[i].addEventListener('click', ()=>{
+        nav_items.style.display = "none";
+    })
+}
